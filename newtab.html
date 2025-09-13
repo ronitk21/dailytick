@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <title>DailyTick</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Patrick+Hand&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div id="app">
+      <header>
+        <div class="left">
+          <h1 contenteditable="true" id="title">Today's Board</h1>
+          <div id="dateWrap">
+            <span id="dateSpan"></span>
+            <span id="itemCount" class="item-count"></span>
+          </div>
+        </div>
+        <div class="center">
+          <div class="motivation-container">
+            <span class="quote-mark">"</span>
+            <textarea
+              id="motivationInput"
+              placeholder="What motivates you today?"
+              class="motivation-input"
+              rows="1"
+            ></textarea>
+            <span class="quote-mark">"</span>
+          </div>
+        </div>
+        <div class="right">
+          <label class="switch">
+            <input type="checkbox" id="themeToggle" />
+            <span class="slider"></span>
+            <span class="label-text">Dark</span>
+          </label>
+
+          <label class="switch">
+            <input type="checkbox" id="dailyReset" />
+            <span class="slider"></span>
+            <span class="label-text">Daily reset</span>
+          </label>
+
+          <button id="markAllDoneBtn" title="Mark all daily items as done">
+            Mark All Done
+          </button>
+          <button id="clearBtn" title="Clear daily checklist">Clear</button>
+        </div>
+      </header>
+
+      <main>
+        <section id="broadGoalsSection" class="column">
+          <div class="section-header">
+            <h2>Long Term Goals 🎯</h2>
+            <div class="controls">
+              <input id="newGoalInput" placeholder="Add a long-term goal..." />
+            </div>
+          </div>
+          <ul id="broadGoals"></ul>
+        </section>
+
+        <section id="checklistSection" class="column">
+          <div class="section-header">
+            <h2>Daily Checklist ✅</h2>
+            <div class="controls">
+              <input id="newItemInput" placeholder="Add a daily task..." />
+            </div>
+          </div>
+          <ul id="checklist"></ul>
+        </section>
+      </main>
+
+      <footer>
+        <small>DailyTick - Your Tab Checklist</small>
+        <small class="shortcuts"
+          >Ctrl+P: New • Ctrl+D: Toggle All • Ctrl+C: Clear</small
+        >
+      </footer>
+    </div>
+
+    <script src="storage.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
