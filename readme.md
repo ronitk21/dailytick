@@ -1,6 +1,7 @@
 # DailyTick
 
 A minimalist Chrome extension that transforms your new tab into a productivity-focused checklist for managing daily tasks.
+link: https://chromewebstore.google.com/detail/dailytick/gilcmelicikdnilinnmfgpkkalnahlok
 
 ## Overview
 
@@ -60,7 +61,7 @@ All data is stored locally using the browser's localStorage API. No external ser
 
 ## Support
 
-For issues, feature requests, or questions, please [create an issue](https://github.com/yourusername/dailytick/issues) on GitHub.
+For issues, feature requests, or questions, please [create an issue](https://github.com/ronitk21/dailytick/issues) on GitHub.
 
 ## License
 
